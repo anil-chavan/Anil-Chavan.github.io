@@ -232,25 +232,23 @@ footer, header {
     header {
         flex-direction: column; /* Stack header items */
         align-items: center;
+        padding: 20px; /* Ensure padding is sufficient */
     }
 
     .header-container {
-        flex-direction: column; /* Stack header elements */
-        align-items: center; /* Center the elements */
+        flex-direction: column; /* Stack the image and text */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
     }
 
     .header-pic {
         width: 80%; /* Responsive width */
-        max-width: 120px; /* Max size */
+        max-width: 120px; /* Maintain max size */
         margin-bottom: 10px; /* Space below the image */
     }
 
-    .header-text {
-        text-align: center; /* Center text */
-    }
-
     .header-text h1 {
-        font-size: 2em; /* Smaller font size */
+        font-size: 2em; /* Smaller font size for mobile */
         margin: 0; /* Remove margin */
     }
 
@@ -260,11 +258,11 @@ footer, header {
     }
 
     header nav {
-        padding: 10px 0; /* Spacing for nav */
+        padding: 10px 0; /* Adjust nav padding */
     }
 
     header nav ul {
-        display: flex; /* Flex display for nav */
+        display: flex; /* Use flexbox for nav items */
         flex-wrap: wrap; /* Allow wrapping */
         justify-content: center; /* Center nav items */
         padding: 0;
@@ -272,14 +270,15 @@ footer, header {
 
     header nav ul li {
         display: block; /* Stack navigation items */
-        margin: 5px 10px; /* Space between items */
+        margin: 5px; /* Space between items */
     }
 
     .about-content {
-        flex-direction: column; /* Stack profile pic and text */
-        align-items: center; /* Center content */
-        text-align: center; /* Center align text */
-        margin-bottom: 15px; /* Space below */
+        display: flex;
+        flex-direction: column; /* Stack photo and text */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+        margin-bottom: 15px; /* Spacing below */
     }
 
     .profile-pic {
@@ -287,7 +286,7 @@ footer, header {
         margin-bottom: 10px; /* Spacing below image */
     }
 
-    .about-section blockquote {
+    blockquote {
         margin: 10px 0; /* Space around quote */
         font-size: 1em; /* Adjust quote size */
     }
@@ -324,9 +323,3 @@ footer, header {
         max-width: none; /* Reset max width */
     }
 }
-
-
-
-
-
-    
