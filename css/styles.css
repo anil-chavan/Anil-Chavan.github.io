@@ -226,3 +226,63 @@ footer {
 footer, header {
     width: 100%;
 }
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-container {
+        text-align: center;
+    }
+
+    .header-pic {
+        width: 80%; /* Adjust size for mobile */
+        max-width: 200px; /* Set a max width */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack navigation links */
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add space between links */
+    }
+
+    .about-section, .services-section {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+    }
+
+    .about-content {
+        text-align: center; /* Center text on mobile */
+    }
+
+    .services-offered {
+        display: flex;
+        flex-direction: column; /* Stack services vertically */
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer sections */
+        align-items: center; /* Center footer content */
+    }
+
+    .footer-section {
+        text-align: center; /* Center text in footer */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    .button {
+        display: block; /* Stack buttons vertically */
+        width: 100%; /* Make buttons full width */
+        margin: 10px 0; /* Space between buttons */
+    }
+}
+
